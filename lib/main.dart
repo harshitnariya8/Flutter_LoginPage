@@ -65,9 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                height: 5,
-                width: 30,
-                color: Color.fromRGBO(241, 0, 134, 1),
+                height: 10,
+                width: 33,
+                color: Color.fromRGBO(247, 0, 134, 1),
               ),
             ],
           ),
@@ -102,30 +102,30 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Icon(
                     isShowPassword ? Icons.visibility : Icons.visibility_off,
-                    color: Color.fromRGBO(241, 0, 134, 1),
+                    color: Color.fromRGBO(248, 0, 134, 1),
                   ),
                 )),
           ),
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           InkWell(
             onTap: (() {
               forget();
             }),
             child: Align(
-              child: Text("Forget Your Password?"),
+              child: Text("Forget Password?"),
               alignment: Alignment.bottomRight,
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           Row(
             children: <Widget>[
               Expanded(
                   child: FlatButton(
-                color: Color.fromRGBO(241, 0, 134, 1),
+                color: Color.fromRGBO(248, 0, 134, 1),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           InkWell(
             onTap: (() {
