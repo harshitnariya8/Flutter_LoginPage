@@ -21,33 +21,33 @@ class _ForgetPageState extends State<ForgetPage> {
   Widget getBody() {
     return SafeArea(
         child: Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         InkWell(
           onTap: () {
             Navigator.pop(context);
           },
           child: Padding(
-            padding: const EdgeInsets.only(left: 15, top: 15),
+            padding: const EdgeInsets.only(left: 20, top: 20),
             child: Icon(Icons.arrow_back),
           ),
         ),
         SizedBox(
-          height: 40,
+          height: 30,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 40),
+          padding: const EdgeInsets.only(left: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
                 "FORGET PASSWORD",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 05, fontWeight: FontWeight.bold),
               ),
               Container(
                 height: 10,
                 width: 55,
-                color: Color.fromRGBO(247, 0, 134, 1),
+                color: Color.fromRGBO(243, 0, 134, 1),
               ),
             ],
           ),
@@ -56,16 +56,16 @@ class _ForgetPageState extends State<ForgetPage> {
           height: 30,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30),
+          padding: const EdgeInsets.only(left: 20, right: 20),
           child: TextField(
             controller: _controllerEmail,
             decoration: InputDecoration(
-              hintText: "Email",
+              hintText: "Email ID",
             ),
           ),
         ),
         SizedBox(
-          height: 35,
+          height: 30,
         ),
         Padding(
           padding: const EdgeInsets.only(right: 30, left: 30),
@@ -73,7 +73,7 @@ class _ForgetPageState extends State<ForgetPage> {
             children: [
               Expanded(
                   child: FlatButton(
-                color: Color.fromRGBO(247, 0, 134, 1),
+                color: Color.fromRGBO(242, 0, 134, 1),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
