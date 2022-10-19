@@ -21,33 +21,33 @@ class _ForgetPageState extends State<ForgetPage> {
   Widget getBody() {
     return SafeArea(
         child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: <Widget>[
         InkWell(
           onTap: () {
             Navigator.pop(context);
           },
           child: Padding(
-            padding: const EdgeInsets.only(left: 20, top: 20),
+            padding: const EdgeInsets.only(left: 15, top: 15),
             child: Icon(Icons.arrow_back),
           ),
         ),
         SizedBox(
-          height: 30,
+          height: 40,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 30),
+          padding: const EdgeInsets.only(left: 40),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
                 "FORGET PASSWORD",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
               Container(
-                height: 5,
-                width: 60,
-                color: Color.fromRGBO(241, 0, 134, 1),
+                height: 10,
+                width: 55,
+                color: Color.fromRGBO(247, 0, 134, 1),
               ),
             ],
           ),
@@ -65,7 +65,7 @@ class _ForgetPageState extends State<ForgetPage> {
           ),
         ),
         SizedBox(
-          height: 30,
+          height: 35,
         ),
         Padding(
           padding: const EdgeInsets.only(right: 30, left: 30),
@@ -73,7 +73,7 @@ class _ForgetPageState extends State<ForgetPage> {
             children: [
               Expanded(
                   child: FlatButton(
-                color: Color.fromRGBO(241, 0, 134, 1),
+                color: Color.fromRGBO(247, 0, 134, 1),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
