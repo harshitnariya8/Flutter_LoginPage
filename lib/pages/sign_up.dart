@@ -16,12 +16,12 @@ class _SignUpState extends State<SignUp> {
   final TextEditingController _controllerConfirmPassword =
       new TextEditingController();
   final TextEditingController _controllerLastName = new TextEditingController();
-  bool isShowPassword = false;
+  bool isShowPassword = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomInset: true,
       body: getBody(),
     );
   }
@@ -29,61 +29,61 @@ class _SignUpState extends State<SignUp> {
   Widget getBody() {
     return SafeArea(
         child: Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         InkWell(
             onTap: () {
               Navigator.pop(context);
             },
             child: Padding(
-                padding: const EdgeInsets.only(left: 15, top: 15),
+                padding: const EdgeInsets.only(left: 22, top: 22),
                 child: Icon(Icons.arrow_back))),
         SizedBox(
-          height: 32,
+          height: 34,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 30),
+          padding: const EdgeInsets.only(left: 25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "SIGNUP",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize:18, fontWeight: FontWeight.bold),
               ),
               Container(
                 height: 5,
                 width: 30,
-                color: Color.fromRGBO(247, 0, 134, 1),
+                color: Color.fromRGBO(243, 0, 134, 1),
               ),
               SizedBox(
-                height: 30,
+                height: 28,
               ),
               Row(
                 children: [
                   Container(
-                    width: 165,
+                    width: 145,
                     child: TextField(
                       controller: _controllerFirstName,
-                      decoration: InputDecoration(hintText: "Your First Name"),
+                      decoration: InputDecoration(hintText: "_First Name"),
                     ),
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 20,
                   ),
                   Container(
-                    width: 155,
+                    width: 145,
                     child: TextField(
                       controller: _controllerLastName,
-                      decoration: InputDecoration(hintText: "your Last Name"),
+                      decoration: InputDecoration(hintText: "_Last Name"),
                     ),
                   ),
                 ],
               ),
               SizedBox(
-                height: 30,
+                height:28,
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 30),
+                padding: const EdgeInsets.only(right: 18),
                 child: TextField(
                   cursorColor: primary,
                   controller: _controllerEmail,
@@ -93,10 +93,10 @@ class _SignUpState extends State<SignUp> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 28,
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 30),
+                padding: const EdgeInsets.only(right: 28),
                 child: TextField(
                     obscureText: !isShowPassword,
                     cursorColor: primary,
