@@ -29,20 +29,20 @@ class _SignUpState extends State<SignUp> {
   Widget getBody() {
     return SafeArea(
         child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: <Widget>[
         InkWell(
             onTap: () {
               Navigator.pop(context);
             },
             child: Padding(
-                padding: const EdgeInsets.only(left: 20, top: 20),
+                padding: const EdgeInsets.only(left: 15, top: 15),
                 child: Icon(Icons.arrow_back))),
         SizedBox(
-          height: 30,
+          height: 32,
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 40),
+          padding: const EdgeInsets.only(left: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -53,7 +53,7 @@ class _SignUpState extends State<SignUp> {
               Container(
                 height: 5,
                 width: 30,
-                color: Color.fromRGBO(241, 0, 134, 1),
+                color: Color.fromRGBO(247, 0, 134, 1),
               ),
               SizedBox(
                 height: 30,
@@ -61,10 +61,10 @@ class _SignUpState extends State<SignUp> {
               Row(
                 children: [
                   Container(
-                    width: 155,
+                    width: 165,
                     child: TextField(
                       controller: _controllerFirstName,
-                      decoration: InputDecoration(hintText: "First Name"),
+                      decoration: InputDecoration(hintText: "Your First Name"),
                     ),
                   ),
                   SizedBox(
@@ -74,7 +74,7 @@ class _SignUpState extends State<SignUp> {
                     width: 155,
                     child: TextField(
                       controller: _controllerLastName,
-                      decoration: InputDecoration(hintText: "Last Name"),
+                      decoration: InputDecoration(hintText: "your Last Name"),
                     ),
                   ),
                 ],
@@ -146,7 +146,7 @@ class _SignUpState extends State<SignUp> {
                       child: Text(
                         "Sign Up",
                         style:
-                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+                            TextStyle(color: Color.fromRGBO(245, 255, 255, 1)),
                       ),
                     ))
                   ],
