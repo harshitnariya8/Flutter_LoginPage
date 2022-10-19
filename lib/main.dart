@@ -36,7 +36,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final TextEditingController _controllerEmail = new TextEditingController();
   final TextEditingController _controllerPassword = new TextEditingController();
-  bool isShowPassword = false;
+  bool isShowPassword = true;
 
   @override
   Widget build(BuildContext context) {
@@ -50,29 +50,29 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget getBody() {
     return SafeArea(
         child: Padding(
-      padding: const EdgeInsets.all(40.0),
+      padding: const EdgeInsets.all(30.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Text(
             "LOGIN",
-            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                height: 20,
-                width: 33,
-                color: Color.fromRGBO(242, 0, 134, 1),
+                height: 10,
+                width: 30,
+                color: Color.fromRGBO(241, 0, 134, 1),
               ),
             ],
           ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
           TextField(
             cursorColor: primary,
@@ -80,11 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               hintText: "Enter Email",
-              labelText: "Email",
+              labelText: "Email ID",
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 30,
           ),
           TextField(
             obscureText: !isShowPassword,
@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Icon(
                     isShowPassword ? Icons.visibility : Icons.visibility_off,
-                    color: Color.fromRGBO(248, 0, 134, 1),
+                    color: Color.fromRGBO(241, 0, 134, 1),
                   ),
                 )),
           ),
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               Expanded(
                   child: FlatButton(
-                color: Color.fromRGBO(248, 0, 134, 1),
+                color: Color.fromRGBO(244, 0, 134, 1),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
@@ -141,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           InkWell(
             onTap: (() {
