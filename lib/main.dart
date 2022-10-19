@@ -55,24 +55,24 @@ class _MyHomePageState extends State<MyHomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           Text(
             "LOGIN",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
-                height: 10,
+                height: 20,
                 width: 33,
-                color: Color.fromRGBO(247, 0, 134, 1),
+                color: Color.fromRGBO(242, 0, 134, 1),
               ),
             ],
           ),
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           TextField(
             cursorColor: primary,
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 40,
           ),
           TextField(
             obscureText: !isShowPassword,
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
               forget();
             }),
             child: Align(
-              child: Text("Forget Password?"),
+              child: Text("Forget My Password?"),
               alignment: Alignment.bottomRight,
             ),
           ),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 onPressed: () {
-                  print("login action");
+                  print("login action aproved");
                 },
                 child: Text(
                   "Login",
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: (() {
               get();
             }),
-            child: Align(child: Text("Don't Have an account")),
+            child: Align(child: Text("I Don't Have an account")),
           )
         ],
       ),
